@@ -18,8 +18,6 @@ class tables:
         table = Frame(window)
         for record in handle:
             for w,column in enumerate(record):
-                if w == 0: size = 5
-                else: size = 30
                 Label(table,text=column,width=sizes[w],borderwidth=2,relief="groove",justify=LEFT,anchor=W, background='white').grid(column=w,row=trow,sticky=W)
             
             trow+=1
