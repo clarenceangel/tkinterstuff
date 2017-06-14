@@ -1,6 +1,6 @@
 from tkinter import *
 import csv
-from tables import tables as create_table
+from tables import createStandardTable as cst
 
 window = Tk()
 
@@ -14,7 +14,7 @@ def createTableFrame():
     f = open("films.csv")
 
     #note here I have sent it root but you can also send it a frame
-    newtable = create_table.createStandardTable(f,tableFrame)
+    newtable = cst(f,tableFrame)
     newtable.grid()
     Button(tableFrame,text="Hide Me",command=hideTableFrame).grid()
 
