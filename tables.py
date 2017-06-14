@@ -2,7 +2,7 @@ from tkinter import *
 import csv
 
 
-def createStandardTable(f,window,fontsize):
+def createStandardTable(f,window):
     handle = csv.reader(f)
     length = len(next(handle))
 
