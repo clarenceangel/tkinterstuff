@@ -1,6 +1,6 @@
 from tkinter import *
 import csv
-from tables import tables as create_table
+from tables import createStandardTable as cst
 
 window = Tk()
 
@@ -12,7 +12,7 @@ f = open("films.csv")
 #see using tables with frames
 #It actually returns a frame that will be placed on the window or frame
 #you send
-newtable = create_table.createStandardTable(f,window)
+newtable = cst(f,window)
 
 newtable.grid()
 
