@@ -21,8 +21,7 @@ def createStandardTable(f,window,fontsize):
             Label(table,text=column,width=sizes[w],borderwidth=2,relief="groove",justify=LEFT,anchor=W, background='white').grid(column=w,row=trow,sticky=W)
         
         trow+=1
-
-    
+        
     return table
 
     
